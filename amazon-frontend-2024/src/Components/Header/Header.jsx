@@ -17,12 +17,13 @@ const Header = () => {
         <div className={classes.header__container}>
           {/* Logo section */}
           <div className={classes.logo__container}>
-            <Link to="/">
+          <Link to="/">
               <img
                 src="https://pngimg.com/uploads/amazon/small/amazon_PNG11.png"
                 alt="amazon logo"
               />
             </Link>
+    
             <div className={classes.delivery}>
               <span>
                 <SlLocationPin />
