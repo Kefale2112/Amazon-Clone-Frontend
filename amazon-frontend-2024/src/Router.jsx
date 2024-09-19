@@ -10,7 +10,7 @@ import SignIn from "./Pages/Auth/Signup";
 import Payment from "./Pages/Payment/Payment";
 import Orders from "./Pages/Orders/Orders"; 
 import Cart from "./Pages/Cart/Cart";
-// import Results from "./Pages/Results/Results";
+import Results from "./Pages/Results/Results";
 // // import ProductDetail from "./Pages/ProductDetail/Productdetail";
 // // import { Elements } from "@stripe/react-stripe-js";
 // // import { loadStripe } from "@stripe/stripe-js";
@@ -27,6 +27,7 @@ function Routing() {
         <Route path="/auth" element={<SignIn/>}/>
         <Route path="/payments" element={<Payment/>}/>
         <Route path="/orders" element={<Orders/>}/>
+        <Route path="/category/:categoryName" element={<Results/>}/>
         <Route path="/cart" element={<Cart/>}/>
       </Routes>
     </Router>

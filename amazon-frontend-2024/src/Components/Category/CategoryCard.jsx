@@ -6,15 +6,15 @@ const CategoryCard = ({data}) => {
   return (
     <div className={classes.category}>
 
-        {/* <Link to={`/category/${data.name}`}> */}
-        <a href=''>
+
+        <Link to={`/category/${data.name}`}>
             <span>
                 <h2>{data?.title}</h2>
             </span>
             <img src={data?.imgLink} alt="" />
             <p>shop now</p>
-        {/* </Link> */}
-        </a>
+        </Link>
+     
     </div>   
   )
 }
