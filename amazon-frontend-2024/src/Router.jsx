@@ -11,10 +11,11 @@ import Payment from "./Pages/Payment/Payment";
 import Orders from "./Pages/Orders/Orders"; 
 import Cart from "./Pages/Cart/Cart";
 import Results from "./Pages/Results/Results";
-// // import ProductDetail from "./Pages/ProductDetail/Productdetail";
+import ProductDetail from "./Pages/ProductDetail/Productdetail";
+// import ProductDetail from "./Pages/ProductDetail/Productdetail"
 // // import { Elements } from "@stripe/react-stripe-js";
 // // import { loadStripe } from "@stripe/stripe-js";
-// // import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
+// import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 
 // const stripePromise = loadStripe(
 //   "pk_test_51OU6YoIrgvX7vjwlwFwZFFmBbuXRo77ewG49UZBndLITKEtINgOsTCmKbx4dvva5opJQYlTggPJ3SuK3HpprL1Pj006REMjwGf"
@@ -24,11 +25,12 @@ function Routing() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing/>}/>
-        <Route path="/auth" element={<SignIn/>}/>
-        <Route path="/payments" element={<Payment/>}/>
-        <Route path="/orders" element={<Orders/>}/>
-        <Route path="/category/:categoryName" element={<Results/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/Auth" element={<SignIn/>}/>
+        <Route path="/Payment" element={<Payment/>}/>
+        <Route path="/Orders" element={<Orders/>}/>
+        <Route path="/Category/:CategoryName" element={<Results/>}/>
+        <Route path="/Products/:ProductId" element={<ProductDetail/>}/>
+        <Route path="/Cart" element={<Cart/>}/>
       </Routes>
     </Router>
 //     <Router>

@@ -36,3 +36,9 @@
     /* margin-left: auto; */
     place-items: center;
   }
+  .category__container{
+    overflow: scroll;
+  }
+  .category__container::-webkit-scrollbar{
+    display: none;
+  }
